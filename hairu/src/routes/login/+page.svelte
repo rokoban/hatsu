@@ -1,72 +1,24 @@
 <script lang="ts">
-    import type { PageData } from './$types';
-    let { data }: { data: PageData } = $props();
+    import AuthForm from "$lib/components/hairu/auth-form.svelte";
+</script>
 
-    import { Button } from "$lib/components/ui/button/index.js";
-    import * as Card from "$lib/components/ui/card/index.js";
-    import * as Select from "$lib/components/ui/select/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import { Label } from "$lib/components/ui/label/index.js";
-    
-    const frameworks = [
-     {
-      value: "sveltekit",
-      label: "SvelteKit"
-     },
-     {
-      value: "next",
-      label: "Next.js"
-     },
-     {
-      value: "astro",
-      label: "Astro"
-     },
-     {
-      value: "nuxt",
-      label: "Nuxt.js"
-     }
-    ];
-    
-    let framework = $state("");
-    
-    const selectedFramework = $derived(
-     frameworks.find((f) => f.value === framework)?.label ?? "Select a framework"
-    );
-   </script>
-    
-<div class="flex justify-center items-center min-h-screen">
-    <Card.Root class="w-[350px]">
-        <Card.Header>
-            <Card.Title>Create project</Card.Title>
-            <Card.Description>Deploy your new project in one-click.</Card.Description>
-        </Card.Header>
-        <Card.Content>
-            <form>
-                <div class="grid w-full items-center gap-4">
-                    <div class="flex flex-col space-y-1.5">
-                        <Label for="name">Name</Label>
-                        <Input id="name" placeholder="Name of your project" />
-                    </div>
-
-                    <div class="flex flex-col space-y-1.5">
-                        <Label for="framework">Framework</Label>
-                        <Select.Root type="single" bind:value={framework}>
-                        <Select.Trigger id="framework">
-                            {selectedFramework}
-                        </Select.Trigger>
-                        <Select.Content>
-                            {#each frameworks as { value, label }}
-                            <Select.Item {value} {label} />
-                            {/each}
-                        </Select.Content>
-                    </Select.Root>
-                </div>
-            </div>
-        </form>
-    </Card.Content>
-    <Card.Footer class="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-    </Card.Footer>
-</Card.Root>
+<div class="lg:p-8">
+	<div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+		<div class="flex flex-col space-y-2 text-center">
+			<h1 class="text-2xl font-semibold tracking-tight">Welcome to Visit Enugu</h1>
+			<p class="text-muted-foreground text-sm">Enter your email below to create your account</p>
+		</div>
+		<AuthForm/>
+		<p class="text-muted-foreground px-8 text-center text-sm">
+			By clicking continue, you agree to our
+			<a href="/terms" class="hover:text-primary underline underline-offset-4">
+				Terms of Service
+			</a>
+			and
+			<a href="/privacy" class="hover:text-primary underline underline-offset-4">
+				Privacy Policy
+			</a>
+			.
+		</p>
+	</div>
 </div>

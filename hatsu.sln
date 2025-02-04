@@ -4,6 +4,8 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinou", "kinou\kinou.csproj", "{ED956F5D-90CB-9E11-E513-5E9AA35B5D31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "momo", "momo\momo.csproj", "{E5A29DF8-FA08-D4DE-C008-A8DE022C5CDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,11 +16,15 @@ Global
 		{ED956F5D-90CB-9E11-E513-5E9AA35B5D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED956F5D-90CB-9E11-E513-5E9AA35B5D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED956F5D-90CB-9E11-E513-5E9AA35B5D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A29DF8-FA08-D4DE-C008-A8DE022C5CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A29DF8-FA08-D4DE-C008-A8DE022C5CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A29DF8-FA08-D4DE-C008-A8DE022C5CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A29DF8-FA08-D4DE-C008-A8DE022C5CDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4B329C97-BB6E-4D7C-AEC0-F626332AD544}
+		SolutionGuid = {A8299AA2-889C-4A2C-8AD7-6073C1DDEA69}
 	EndGlobalSection
 EndGlobal

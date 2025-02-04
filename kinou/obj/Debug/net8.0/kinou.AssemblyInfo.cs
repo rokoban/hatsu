@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kinou")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99544e5a347722e9c9c6d0885586f55511eb85bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee92a2d491d410b18b7973576791c35717cf91d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("kinou")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kinou")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
